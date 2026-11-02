@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        echo "Hej!";
-        
-    ?>
-    Hej då!
+    <header>
+        <?php
+            include("header.php");
+        ?>
+    </header>
 </body>
 </html>
