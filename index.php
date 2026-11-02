@@ -8,6 +8,8 @@
 <body>
     <?php
         echo "Hej!";
+        
     ?>
+    Hej då!
 </body>
 </html>
