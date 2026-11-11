@@ -8,9 +8,9 @@
 </head>
 <body>
     <form action="POST">
-        <input type="email">
-        <input type="text">
-        <input type="password">
+        <input type="email" placeholder="email">
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
         <button type="submit">Register</button>
     </form>
 </body>
