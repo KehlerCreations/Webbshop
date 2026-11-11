@@ -4,6 +4,12 @@
     text-decoration: none;
 }
 
+body {
+    color: white;
+    background-color: hsl(160, 20, 50);
+}
+
 form {
     display: grid;
+    width: 800px;
 }
