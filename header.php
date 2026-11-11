@@ -6,6 +6,6 @@
         <li>Log in</li>
     </ul>
     <ul>
-        <li>Register</li>
+        <li><a href="/register.php">Register</a></li>
     </ul>
 </nav>
