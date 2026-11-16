@@ -1,6 +1,10 @@
 <?php
 
-// include("connect_database.php");
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// require "connect_database.php";
 
 $conn = mysqli_connect("127.0.0.1", "elliot", "skola1234*", "game_store");
 
@@ -9,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $query = "INSERT INTO users ('email', 'username', 'password') values ('$email', '$username', '$password')";
+    $query = "INSERT INTO users ('email', 'username', 'password') VALUES ('$email', '$username', '$password')";
 
     $conn->query($query);
 }
