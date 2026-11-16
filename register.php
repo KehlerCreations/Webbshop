@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="POST">
+    <form method="POST">
         <input type="email" placeholder="email" name="email">
         <input type="text" placeholder="username" name="username">
         <input type="password" placeholder="password" name="password">
