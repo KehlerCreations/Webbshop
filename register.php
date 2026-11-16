@@ -8,6 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
 
     $query = "INSERT INTO users ('email', 'username', 'password') values ('$email', '$username', '$password')";
+
+    $conn->query($query);
 }
 
 ?>
