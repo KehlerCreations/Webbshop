@@ -1,6 +1,8 @@
 <?php
 
-include("connect_database.php");
+// include("connect_database.php");
+
+$conn = mysqli_connect("127.0.0.1", "elliot", "skola1234*", "game_store");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
