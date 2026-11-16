@@ -13,9 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $query = "INSERT INTO users ('email', 'username', 'password') VALUES ('$email', '$username', '$password')";
+    echo($email);
+    echo($username);
+    echo($password);
 
-    $conn->query($query);
+    $query = "INSERT INTO users ('email', 'username', 'password') VALUES ('$email', '$username', '$password')";
+    // $conn->query($query);
 }
 
 ?>
