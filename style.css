@@ -16,6 +16,10 @@ form {
     justify-self: center;
     /* justify-content: center; */
     
+    & input {
+        padding: 10px;
+    }
+
     & button {
         width: 30%;
     }
