@@ -13,6 +13,7 @@ body {
 form {
     display: grid;
     width: 800px;
+    justify-content: center;
     
     & button {
         width: 30%;
