@@ -32,6 +32,8 @@ button {
 }
 
 header {
+    padding: 10px;
+
     
     & nav ul {
         width: 100%;
