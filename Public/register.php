@@ -35,7 +35,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="email" placeholder="email" name="email">
         <input type="text" placeholder="username" name="username">
         <input type="password" placeholder="password" name="password">
-        <input type="checkbox" name="is_admin">
+        <div>
+            <span>Admin account</span>
+            <input type="checkbox" name="is_admin">
+        </div>
+        
         <button type="submit">Register</button>
     </form>
 </body>
