@@ -15,12 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    if(isset($_POST["is_admin"])) $is_admin = $_POST["is_admin"];
-    if(isset($is_admin) && $is_admin === "true") {
-        $is_admin = true;
-    } else {
-        $is_admin = false;
-    }
+    $is_admin = false;
+    if(isset($_POST["is_admin"]) && $_POST["is_admin"] == "true") $is_admin = true;
 
     $query = "INSERT INTO users (email, username, password, admin) VALUES ('$email', '$username', '$password', '$is_admin')";
     $conn->query($query);
