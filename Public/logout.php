@@ -2,6 +2,7 @@
 
 session_destroy();
 
-header($_SERVER['DOCUMENT_ROOT']."/index.php");
+header("Location: ".$_SERVER['DOCUMENT_ROOT']."/index.php");
+exit;
 
 ?>
