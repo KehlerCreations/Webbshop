@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if($result->num_rows === 1) {
         $_SESSION["logged_in"] = true;
+        echo "LOGGED IN";
     }
 }
 
