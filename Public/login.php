@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["logged_in"] = true;
 
         $data = $result->fetch_assoc();
-        if($data["is_admin"] == 1) $_SESSION["is_admin"] = true;
+        if($data["admin"] == 1) $_SESSION["is_admin"] = true;
     }
 }
 
