@@ -14,7 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $username = $_POST["username"];
     $password = $_POST["password"];
-    $is_admin = $_POST["is_admin"];
+
+    if(isset($_POST["is_admin"])) $is_admin = $_POST["is_admin"];
     if(isset($is_admin) && $is_admin === "true") {
         $is_admin = true;
     } else {
