@@ -1,8 +1,8 @@
 <?php
 
-include("connect_database.php");
+//include("connect_database.php");
 
-session_start();
+//session_start();
 
 ?>
 
