@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $is_admin = $_POST["is_admin"];
 
     $query = "INSERT INTO users (email, username, password, admin) VALUES ('$email', '$username', '$password', '$is_admin')";
-    $conn->query($query);
+    $conn->query($query); 
 }
 
 ?>
