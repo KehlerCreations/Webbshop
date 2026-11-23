@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// require "connect_database.php";
+// require "../connect_database.php";
 
 $conn = mysqli_connect("127.0.0.1", "elliot", "skola1234*", "game_store");
 
@@ -19,6 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if($result->num_rows === 1) {
         $_SESSION["logged_in"] = true;
+
+        $data = $result->fetch_assoc();
+        if($data["is_admin"] == 1) $_SESSION["is_admin"] = true;
     }
 }
 
