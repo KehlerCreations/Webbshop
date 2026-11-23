@@ -13,3 +13,11 @@ form {
     display: grid;
     width: 800px;
 }
+
+header {
+    
+    & nav ul {
+        display: flex;
+    }
+
+}
