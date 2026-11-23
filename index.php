@@ -15,6 +15,6 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <?php include("/Public/header.php"); ?>
+    <?php include("header.php"); ?>
 </body>
 </html>
