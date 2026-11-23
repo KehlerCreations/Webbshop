@@ -15,6 +15,6 @@ session_start();
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/header.php"; ?>
+    <?php include "header.php"; ?>
 </body>
 </html>
