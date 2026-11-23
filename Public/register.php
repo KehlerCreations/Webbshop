@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <?php include "\header.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/header.php"; ?>
 
     <form method="POST">
         <input type="email" placeholder="email" name="email">
