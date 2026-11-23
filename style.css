@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     color: white;
+    font-family: sans-serif;
 }
 
 body {
@@ -15,7 +16,7 @@ form {
     gap: 5px;
     width: 800px;
     justify-self: center;
-    /* justify-content: center; */
+    justify-items: center;
     
     & input {
         padding: 10px;
