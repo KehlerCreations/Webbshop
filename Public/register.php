@@ -15,6 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
     $is_admin = $_POST["is_admin"];
+    if(isset($is_admin) && $is_admin === "true") {
+        $is_admin = true;
+    } else {
+        $is_admin = false;
+    }
 
     $query = "INSERT INTO users (email, username, password, admin) VALUES ('$email', '$username', '$password', '$is_admin')";
     $conn->query($query);
@@ -39,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="password" placeholder="password" name="password">
         <div>
             <span>Admin account</span>
-            <input type="checkbox" name="is_admin">
+            <input type="checkbox" value="true" name="is_admin">
         </div>
         
         <button type="submit">Register</button>
