@@ -2,7 +2,7 @@
 
 //include("connect_database.php");
 
-//session_start();
+session_start();
 
 ?>
 
@@ -15,6 +15,6 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <?php include("header.php"); ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/header.php"; ?>
 </body>
 </html>

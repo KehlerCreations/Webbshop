@@ -8,6 +8,8 @@
 
 $conn = mysqli_connect("127.0.0.1", "elliot", "skola1234*", "game_store");
 
+session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $username = $_POST["username"];

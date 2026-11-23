@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +12,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include("/header.php"); ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/header.php"; ?>
 </body>
 </html>
