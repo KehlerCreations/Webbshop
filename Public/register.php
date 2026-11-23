@@ -12,8 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $username = $_POST["username"];
     $password = $_POST["password"];
+    $is_admin = $_POST["is_admin"];
 
-    $query = "INSERT INTO users (email, username, password) VALUES ('$email', '$username', '$password')";
+    $query = "INSERT INTO users (email, username, password, admin) VALUES ('$email', '$username', '$password', '$is_admin')";
     $conn->query($query);
 }
 
@@ -32,6 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="email" placeholder="email" name="email">
         <input type="text" placeholder="username" name="username">
         <input type="password" placeholder="password" name="password">
+        <input type="checkbox" name="is_admin">
         <button type="submit">Register</button>
     </form>
 </body>
