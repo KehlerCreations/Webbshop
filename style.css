@@ -19,6 +19,10 @@ form {
     }
 }
 
+button {
+    background: hsl(0%, 0, 10);
+}
+
 header {
     
     & nav ul {
