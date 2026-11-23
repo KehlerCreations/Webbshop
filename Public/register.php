@@ -29,6 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php include("/Public/header.php"); ?>
+
     <form method="POST">
         <input type="email" placeholder="email" name="email">
         <input type="text" placeholder="username" name="username">

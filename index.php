@@ -15,11 +15,6 @@ session_start();
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-        <?php
-            include("header.php");
-        ?>
-    </header>
-
+    <?php include("/Public/header.php"); ?>
 </body>
 </html>
