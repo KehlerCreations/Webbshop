@@ -12,12 +12,14 @@ session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
-    $username = $_POST["username"];
     $password = $_POST["password"];
-    $is_admin = $_POST["is_admin"];
 
-    $query = "INSERT INTO users (email, username, password, admin) VALUES ('$email', '$username', '$password', '$is_admin')";
-    $conn->query($query); 
+    $query = "SELECT id FROM users WHERE email='$email' AND password = '$password'";
+    $result = $conn->query($query);
+
+    if($result->num_rows === 1) {
+        $_SESSION["logged_in"] = true;
+    }
 }
 
 ?>
@@ -35,14 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <form method="POST">
         <input type="email" placeholder="email" name="email">
-        <input type="text" placeholder="username" name="username">
         <input type="password" placeholder="password" name="password">
-        <div>
-            <span>Admin account</span>
-            <input type="checkbox" name="is_admin">
-        </div>
         
-        <button type="submit">Register</button>
+        <button type="submit">Log in</button>
     </form>
 </body>
 </html>
