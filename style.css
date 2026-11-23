@@ -13,6 +13,10 @@ body {
 form {
     display: grid;
     width: 800px;
+    
+    & button {
+        width: 30%;
+    }
 }
 
 header {
