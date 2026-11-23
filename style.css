@@ -26,10 +26,12 @@ form {
         padding: 10px;
         
         background-color: hsl(0, 0%, 20%);
+        border: none;
     }
 
     & button {
         width: 30%;
+        border: none;
     }
 }
 
