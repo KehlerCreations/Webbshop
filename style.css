@@ -34,12 +34,12 @@ button {
 header {
     padding: 10px;
 
-    
+
     & nav ul {
         width: 100%;
         display: flex;
         list-style-type: none;
-        justify-content:space-between;
+        justify-content:space-evenly;
     }
 
 }
